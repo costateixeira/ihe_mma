@@ -1,0 +1,54 @@
+{
+	"resourceType" : "MedicationRequest",
+	"id" : "iherx003",
+	"meta" : {"tag" : [{"code" : "ihe"}]},
+	"identifier" : [{
+			"value" : "iherx003"
+		}
+	],
+	"definition" : [{
+			"reference" : "ActivityDefinition/example"
+		}
+	],
+	"requisition" : {
+		"value" : "95"
+	},
+	"status" : "active",
+	"intent" : "order",
+	"medicationReference" : {
+		"reference" : "Medication/ihemed0191"
+	},
+	"patient" : {
+		"reference" : "Patient/ihepat0333",
+		"display" : "Sandra Salut"
+	},
+	"dateWritten" : "2017-02-08",
+	"dosageInstruction" : [{
+			"sequence" : 1,
+			"text" : "single dose",
+			"timing" : {
+				"repeat" : {
+					"frequency" : 3,
+					"period" : 1,
+					"periodUnit" : "d",
+					"duration": 7,
+					"durationUnit": "d"
+				}
+			},
+			"route" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "255559005",
+						"display" : "Oral"
+					}
+				]
+			},
+			"doseQuantity" : {
+				"value" : 1000,
+				"unit" : "mg",
+				"system" : "http://unitsofmeasure.org",
+				"code" : "mg"
+			}
+		}
+	]
+}

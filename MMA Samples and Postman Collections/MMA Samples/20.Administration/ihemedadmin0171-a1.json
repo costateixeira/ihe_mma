@@ -1,0 +1,84 @@
+{
+	"resourceType" : "MedicationAdministration",
+	"id" : "ihemedadmin0171-i1",
+	"meta" : {
+		"tag" : [{
+				"code" : "ihe"
+			}
+		]
+	},
+	"contained" : [
+		{
+			"resourceType" : "Medication",
+			"id" : "ihemed0171-i1",
+			"code" : {
+				"coding" : [{
+						"system" : "https://www.cipclub.org/Referentiel/UCD-13",
+						"code" : "3400890867993",
+						"display" : "SPASFON"
+					}
+				]
+			}
+		},
+		{
+			"resourceType" : "Encounter",
+			"id" : "ihevisit001",
+			"status" : "finished"
+		},		
+		{
+			"resourceType" : "Practitioner",
+			"id" : "ihenurse0707"
+		}
+	],
+	"status" : "completed",
+	"medicationReference" : {
+		"reference" : "#ihemedadmin0171-i1"
+	},
+	"subject" : {
+		"reference" : "Patient/ihepat0111",
+		"display" : "Phil Phlips"
+	},
+	"context" : {
+		"reference" : "#ihevisit001",
+		"display" : "Morning shift"
+	},
+	"effectivePeriod" : {
+		"start" : "2015-01-15T04:30:00+01:00",
+		"end" : "2015-01-15T14:30:00+01:00"
+	},
+	"performer" : [{
+			"actor" : {
+				"reference" : "#ihenurse0707",
+				"display" : "Nurse 0707"
+			}
+		}
+	],
+	"prescription" : {
+		"reference" : "MedicationRequest/iherx001"
+	},
+	"dosage" : {
+		"text" : "One tablet after meal",
+		"route" : {
+			"coding" : [{
+					"system" : "http://snomed.info/sct",
+					"code" : "26643006",
+					"display" : "Oral Route"
+				}
+			]
+		},
+		"method" : {
+			"coding" : [{
+					"system" : "http://snomed.info/sct",
+					"code" : "421521009",
+					"display" : "Swallow - dosing instruction imperative (qualifier value)"
+				}
+			]
+		},
+		"dose" : {
+			"value" : 1,
+			"unit" : "TAB",
+			"system" : "http://hl7.org/fhir/ValueSet/v3-orderableDrugForm",
+			"code" : "TAB"
+		}
+	}
+}

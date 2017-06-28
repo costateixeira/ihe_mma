@@ -1,0 +1,361 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MMA 1.8.0",
+		"_postman_id": "fe08a38c-f62a-b505-a47c-1a6ff72a0323",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01.Patients",
+			"description": "",
+			"item": [
+				{
+					"name": "PUT Patient ihepat0111",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0111",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Patient\",\r\n\t\"id\" : \"ihepat0111\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"type\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://hl7.org/fhir/v2/0203\",\r\n\t\t\t\t\t\t\"code\" : \"SS\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"system\" : \"https://ihe.net/Pharmacy/Patient\",\r\n\t\t\t\"value\" : \"ihepat0111\"\r\n\t\t}\r\n\t],\r\n\t\"active\" : true,\r\n\t\"name\" : [{\r\n\t\t\t\"use\" : \"official\",\r\n\t\t\t\"family\" : \"Philips\",\r\n\t\t\t\"given\" : [\r\n\t\t\t\t\"Phil\"\r\n\t\t\t]\r\n\t\t}\r\n\t],\r\n\t\"gender\" : \"male\",\r\n\t\"birthDate\" : \"1973-04-15\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Patient ihepat0222",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0222",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Patient\",\r\n\t\"id\" : \"ihepat0222\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"type\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://hl7.org/fhir/v2/0203\",\r\n\t\t\t\t\t\t\"code\" : \"SS\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"system\" : \"https://ihe.net/Pharmacy/Patient\",\r\n\t\t\t\"value\" : \"ihepat0222\"\r\n\t\t}\r\n\t],\r\n\t\"active\" : true,\r\n\t\"name\" : [{\r\n\t\t\t\"use\" : \"official\",\r\n\t\t\t\"family\" : \"Medici\",\r\n\t\t\t\"given\" : [\r\n\t\t\t\t\"Marco\"\r\n\t\t\t]\r\n\t\t}\r\n\t],\r\n\t\"gender\" : \"male\",\r\n\t\"birthDate\" : \"1953-05-05\"\r\n}\r\n\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Patient ihepat0333",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0333",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Patient\",\r\n\t\"id\" : \"ihepat0333\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"type\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://hl7.org/fhir/v2/0203\",\r\n\t\t\t\t\t\t\"code\" : \"SS\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"system\" : \"https://ihe.net/Pharmacy/Patient\",\r\n\t\t\t\"value\" : \"ihepat0333\"\r\n\t\t}\r\n\t],\r\n\t\"active\" : true,\r\n\t\"name\" : [{\r\n\t\t\t\"use\" : \"official\",\r\n\t\t\t\"family\" : \"Salut\",\r\n\t\t\t\"given\" : [\r\n\t\t\t\t\"Sandra\"\r\n\t\t\t]\r\n\t\t}\r\n\t],\r\n\t\"gender\" : \"female\",\r\n\t\"birthDate\" : \"1933-03-03\"\r\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02.Medication",
+			"description": "",
+			"item": [
+				{
+					"name": "PUT Medication ihemed0171",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0171",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Medication\",\r\n\t\"id\" : \"ihemed0171\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"contained\" : [{\r\n\t\t\t\"resourceType\" : \"Organization\",\r\n\t\t\t\"id\" : \"iheorg6\",\r\n\t\t\t\"name\" : \"Teva Santé\"\r\n\t\t}\r\n\t],\r\n\t\"code\" : {\r\n\t\t\"coding\" : [{\r\n\t\t\t\t\"code\" : \"3400930986080\",\r\n\t\t\t\t\"display\" : \"Spasfon\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"isBrand\" : true,\r\n\t\"manufacturer\" : {\r\n\t\t\"reference\" : \"#iheorg6\"\r\n\t},\r\n\t\"product\" : {\r\n\t\t\"form\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\"code\" : \"385057009\",\r\n\t\t\t\t\t\"display\" : \"Film-coated tablet (qualifier value)\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"ingredient\" : [{\r\n\t\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\t\"code\" : \"19341000122103\",\r\n\t\t\t\t\t\t\t\"display\" : \"Phloroglucinol (substance)\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t},\r\n\t\t\t\t\"amount\" : {\r\n\t\t\t\t\t\"numerator\" : {\r\n\t\t\t\t\t\t\"value\" : 80,\r\n\t\t\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t\t\t},\r\n\t\t\t\t\t\"denominator\" : {\r\n\t\t\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\t\"code\" : \"10220000\"\r\n\t\t\t\t\t}\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"package\" : {\r\n\t\t\"container\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC\",\r\n\t\t\t\t\t\"code\" : \"30009000\",\r\n\t\t\t\t\t\"display\" : \"Box\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"content\" : [{\r\n\t\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\t\t\"code\" : \"10220000\",\r\n\t\t\t\t\t\t\t\"display\" : \"Coated Tablet\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t},\r\n\t\t\t\t\"amount\" : {\r\n\t\t\t\t\t\"value\" : 30\r\n\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Medication ihemed0181",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0181",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Medication\",\r\n\t\"id\" : \"ihemed0181\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"contained\" : [{\r\n\t\t\t\"resourceType\" : \"Organization\",\r\n\t\t\t\"id\" : \"iheorg7\",\r\n\t\t\t\"name\" : \"SANOFI-AVENTIS FRANCE\"\r\n\t\t}\r\n\t],\r\n\t\"code\" : {\r\n\t\t\"coding\" : [{\r\n\t\t\t\t\"code\" : \"3400933302061\",\r\n\t\t\t\t\"display\" : \"PROFENID\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"isBrand\" : true,\r\n\t\"manufacturer\" : {\r\n\t\t\"reference\" : \"#iheorg7\"\r\n\t},\r\n\t\"product\" : {\r\n\t\"form\" : {\r\n\t\t\"coding\" : [{\r\n\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\"code\" : \"385057009\",\r\n\t\t\t\t\"display\" : \"Film-coated tablet (qualifier value)\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"ingredient\" : [{\r\n\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"386832008\",\r\n\t\t\t\t\t\t\"display\" : \"Ketoprofen (substance)\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"amount\" : {\r\n\t\t\t\t\"numerator\" : {\r\n\t\t\t\t\t\"value\" : 100,\r\n\t\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t\t},\r\n\t\t\t\t\"denominator\" : {\r\n\t\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\"code\" : \"10220000\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t]},\r\n\t\"package\" : {\r\n\t\t\"container\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC\",\r\n\t\t\t\t\t\"code\" : \"30009000\",\r\n\t\t\t\t\t\"display\" : \"Box\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"content\" : [{\r\n\t\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\t\t\"code\" : \"10220000\",\r\n\t\t\t\t\t\t\t\"display\" : \"Coated Tablet\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t},\r\n\t\t\t\t\"amount\" : {\r\n\t\t\t\t\t\"value\" : 30\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT Medication ihemed0191",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0191",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"Medication\",\r\n\t\"id\" : \"ihemed0191\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"contained\" : [{\r\n\t\t\t\"resourceType\" : \"Organization\",\r\n\t\t\t\"id\" : \"iheorg8\",\r\n\t\t\t\"name\" : \"Sandoz\"\r\n\t\t}\r\n\t],\r\n\t\"code\" : {\r\n\t\t\"coding\" : [{\r\n\t\t\t\t\"code\" : \"3400939207414\",\r\n\t\t\t\t\"display\" : \"AMOXICILLINE SANDOZ 500 mg\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"isBrand\" : true,\r\n\t\"manufacturer\" : {\r\n\t\t\"reference\" : \"#iheorg8\"\r\n\t},\r\n\t\"product\" : {\r\n\t\"form\" : {\r\n\t\t\"coding\" : [{\r\n\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\"code\" : \"385057009\",\r\n\t\t\t\t\"display\" : \"Film-coated tablet (qualifier value)\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"ingredient\" : [{\r\n\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"372687004\",\r\n\t\t\t\t\t\t\"display\" : \"Amoxicillin (substance)\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"amount\" : {\r\n\t\t\t\t\"numerator\" : {\r\n\t\t\t\t\t\"value\" : 1000,\r\n\t\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t\t},\r\n\t\t\t\t\"denominator\" : {\r\n\t\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\"code\" : \"10220000\"\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t}\r\n\t]},\r\n\t\"package\" : {\r\n\t\t\"container\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC\",\r\n\t\t\t\t\t\"code\" : \"30009000\",\r\n\t\t\t\t\t\"display\" : \"Box\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"content\" : [{\r\n\t\t\t\t\"itemCodeableConcept\" : {\r\n\t\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF\",\r\n\t\t\t\t\t\t\t\"code\" : \"10220000\",\r\n\t\t\t\t\t\t\t\"display\" : \"Coated Tablet\"\r\n\t\t\t\t\t\t}\r\n\t\t\t\t\t]\r\n\t\t\t\t},\r\n\t\t\t\t\"amount\" : {\r\n\t\t\t\t\t\"value\" : 6\r\n\t\t\t\t}\r\n\t\t\t}\r\n\t\t]\r\n\t}\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "10.Prescription (MedicationRequest - order)",
+			"description": "",
+			"item": [
+				{
+					"name": "PUT MedicatioRequest iherx001",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx001",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherx001\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherx001\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"99\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"dateWritten\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"frequency\" : 3,\r\n\t\t\t\t\t\"period\" : 1,\r\n\t\t\t\t\t\"periodUnit\" : \"d\",\r\n\t\t\t\t\t\"duration\": 7,\r\n\t\t\t\t\t\"durationUnit\": \"d\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 500,\r\n\t\t\t\t\"unit\" : \"mg\",\r\n\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT MedicatioRequest iherx002",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx002",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherx002\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherx002\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"97\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0181\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0222\",\r\n\t\t\"display\" : \"Marco Medici\"\r\n\t},\r\n\t\"dateWritten\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"frequency\" : 3,\r\n\t\t\t\t\t\"period\" : 1,\r\n\t\t\t\t\t\"periodUnit\" : \"d\",\r\n\t\t\t\t\t\"duration\": 10,\r\n\t\t\t\t\t\"durationUnit\": \"d\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 100,\r\n\t\t\t\t\"unit\" : \"mg\",\r\n\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT MedicatioRequest iherx003",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx003",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherx003\",\r\n\t\"meta\" : {\"tag\" : [{\"code\" : \"ihe\"}]},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherx003\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"95\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0191\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0333\",\r\n\t\t\"display\" : \"Sandra Salut\"\r\n\t},\r\n\t\"dateWritten\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"frequency\" : 3,\r\n\t\t\t\t\t\"period\" : 1,\r\n\t\t\t\t\t\"periodUnit\" : \"d\",\r\n\t\t\t\t\t\"duration\": 7,\r\n\t\t\t\t\t\"durationUnit\": \"d\"\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1000,\r\n\t\t\t\t\"unit\" : \"mg\",\r\n\t\t\t\t\"system\" : \"http://unitsofmeasure.org\",\r\n\t\t\t\t\"code\" : \"mg\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11.PlannedAdministration (MedicationRequest - instance-order)",
+			"description": "",
+			"item": [
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01001",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01001",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01001\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01001\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-13\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCM\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01002",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01002",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01002\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01002\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-13\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCD\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01003",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01003",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01003\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01003\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-13\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCV\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01004",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01004",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01004\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01004\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-14\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCM\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01005",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01005",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01005\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01005\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-14\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCD\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "{{baseurl}}/MedicationRequest/iherxio01006",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01006",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationRequest\",\r\n\t\"id\" : \"iherxio01006\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"identifier\" : [{\r\n\t\t\t\"value\" : \"iherxio01006\"\r\n\t\t}\r\n\t],\r\n\t\"definition\" : [{\r\n\t\t\t\"reference\" : \"ActivityDefinition/example\"\r\n\t\t}\r\n\t],\r\n\t\"basedOn\" : [{\r\n\t\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t\t}, {\r\n\t\t\t\"reference\" : \"CarePlan/ihe_careplan_001\"\r\n\t\t}\r\n\t],\r\n\t\"requisition\" : {\r\n\t\t\"value\" : \"983939393\"\r\n\t},\r\n\t\"status\" : \"active\",\r\n\t\"intent\" : \"instance-order\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"Medication/ihemed0171\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Philips\"\r\n\t},\r\n\t\"authoredOn\" : \"2017-02-08\",\r\n\t\"dosageInstruction\" : [{\r\n\t\t\t\"sequence\" : 1,\r\n\t\t\t\"text\" : \"single dose\",\r\n\t\t\t\"timing\" : {\r\n\t\t\t\t\"event\" : [\"2017-08-14\"],\r\n\t\t\t\t\"repeat\" : {\r\n\t\t\t\t\t\"count\" : 1,\r\n\t\t\t\t\t\"when\" : [\"PCV\"]\r\n\t\t\t\t}\r\n\t\t\t},\r\n\t\t\t\"route\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\t\"code\" : \"255559005\",\r\n\t\t\t\t\t\t\"display\" : \"Oral\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t},\r\n\t\t\t\"doseQuantity\" : {\r\n\t\t\t\t\"value\" : 1,\r\n\t\t\t\t\"unit\" : \"tablet\",\r\n\t\t\t\t\"system\" : \"https://standardterms.edqm.eu/browse/get_concepts/UOP\",\r\n\t\t\t\t\"code\" : \"tb\"\r\n\t\t\t}\r\n\t\t}\r\n\t]\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "20.Administration",
+			"description": "",
+			"item": [
+				{
+					"name": "{{baseurl}}/MedicationAdministration/ihemedadmin0171-i1",
+					"request": {
+						"url": "{{baseurl}}/MedicationAdministration/ihemedadmin0171-i1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/fhir+json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"resourceType\" : \"MedicationAdministration\",\r\n\t\"id\" : \"ihemedadmin0171-i1\",\r\n\t\"meta\" : {\r\n\t\t\"tag\" : [{\r\n\t\t\t\t\"code\" : \"ihe\"\r\n\t\t\t}\r\n\t\t]\r\n\t},\r\n\t\"contained\" : [{\r\n\t\t\t\"resourceType\" : \"Medication\",\r\n\t\t\t\"id\" : \"ihemed0171-i1\",\r\n\t\t\t\"code\" : {\r\n\t\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\t\"code\" : \"3400930986080\",\r\n\t\t\t\t\t\t\"display\" : \"Spasfon\"\r\n\t\t\t\t\t}\r\n\t\t\t\t]\r\n\t\t\t}\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"resourceType\" : \"Encounter\",\r\n\t\t\t\"id\" : \"ihevisit001\",\r\n\t\t\t\"status\" : \"finished\"\r\n\t\t},\t\t\r\n\t\t{\r\n\t\t\t\"resourceType\" : \"Practitioner\",\r\n\t\t\t\"id\" : \"ihenurse0707\"\r\n\t\t}\t\t\r\n\t],\r\n\t\"status\" : \"completed\",\r\n\t\"medicationReference\" : {\r\n\t\t\"reference\" : \"#ihemedadmin0171-i1\"\r\n\t},\r\n\t\"patient\" : {\r\n\t\t\"reference\" : \"Patient/ihepat0111\",\r\n\t\t\"display\" : \"Phil Phlips\"\r\n\t},\r\n\t\"encounter\" : {\r\n\t\t\"reference\" : \"#ihevisit001\",\r\n\t\t\"display\" : \"Morning shift\"\r\n\t},\r\n\t\"effectivePeriod\" : {\r\n\t\t\"start\" : \"2015-01-15T04:30:00+01:00\",\r\n\t\t\"end\" : \"2015-01-15T14:30:00+01:00\"\r\n\t},\r\n\t\"performer\" : [{\r\n\t\t\t\"reference\" : \"#ihenurse0707\",\r\n\t\t\t\"display\" : \"Nurse 0707\"\r\n\t\t}\r\n\t],\r\n\t\"prescription\" : {\r\n\t\t\"reference\" : \"MedicationRequest/iherx001\"\r\n\t},\r\n\t\"dosage\" : {\r\n\t\t\"text\" : \"One tablet after meal\",\r\n\t\t\"route\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\"code\" : \"26643006\",\r\n\t\t\t\t\t\"display\" : \"Oral Route\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"method\" : {\r\n\t\t\t\"coding\" : [{\r\n\t\t\t\t\t\"system\" : \"http://snomed.info/sct\",\r\n\t\t\t\t\t\"code\" : \"421521009\",\r\n\t\t\t\t\t\"display\" : \"Swallow - dosing instruction imperative (qualifier value)\"\r\n\t\t\t\t}\r\n\t\t\t]\r\n\t\t},\r\n\t\t\"dose\" : {\r\n\t\t\t\"value\" : 1,\r\n\t\t\t\"unit\" : \"TAB\",\r\n\t\t\t\"system\" : \"http://hl7.org/fhir/ValueSet/v3-orderableDrugForm\",\r\n\t\t\t\"code\" : \"TAB\"\r\n\t\t}\r\n\t}\r\n}\r\n"
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

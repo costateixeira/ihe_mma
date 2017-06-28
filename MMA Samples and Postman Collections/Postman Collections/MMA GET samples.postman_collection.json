@@ -1,0 +1,744 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MMA GET",
+		"_postman_id": "10eae252-c325-6365-1d76-6fafb8f816dd",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "01.Patients",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve Patient ihepat0111",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0111",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Patient ihepat0222",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0222",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Patient ihepat0333",
+					"request": {
+						"url": "{{baseurl}}/Patient/ihepat0333",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "02.Medication",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve Medication ihemed0171",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0171",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Medication ihemed0181",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0181",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve Medication ihemed0191",
+					"request": {
+						"url": "{{baseurl}}/Medication/ihemed0191",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "10.Prescription (MedicationRequest-order)",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve MedicationRequest iherx001",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx001",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx002",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx002",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx003",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherx003",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11.PlannedAdministration (MedicationRequest - instance-order)",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve MedicationRequest iherx01001",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01001",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx01002",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01002",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx01003",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01003",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx01004",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01004",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx01005",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01005",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Retrieve MedicationRequest iherx01006",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest/iherxio01006",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11bis Routeplanning Search parameters 1.8.0",
+			"description": "",
+			"item": [
+				{
+					"name": "Routeplanning Search _id",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?_id=iherxio01001",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search _ids",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?_id=iherxio01001,iherxio01002,iherxio01003",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient._id",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient._id=ihepat0111",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.identifier",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.identifier=ihepat0111",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.identifier&domain",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.identifier=https://ihe.net/Pharmacy/Patient|ihepat0111",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.name",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.name=Philips",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.family&patient.given",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.family=Philips&patient.given=Phil",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.birthdate",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.birthdate=1973-04-15",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.age>=18",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.birthdate=le1999-03-09&patient.identifier=https://ihe.net/Pharmacy/Patient|",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.gender",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.gender=male&patient.identifier=https://ihe.net/Pharmacy/Patient|",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search status",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?status=active&patient.identifier=https://ihe.net/Pharmacy/Patient|",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "11bis Routeplanning Search parameters 1.9.0",
+			"description": "",
+			"item": [
+				{
+					"name": "Routeplanning Search _id",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?_id=iherxio01001",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search _ids",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?_id=iherxio01001,iherxio01002,iherxio01003",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient._id",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient._id=ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.identifier",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.identifier=ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.identifier&domain",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.identifier=https://ihe.net/Pharmacy/Patient|ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.name",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.name=Philips&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.family&patient.given",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.family=Philips&patient.given=Phil&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.birthdate",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.birthdate=1973-04-15&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.age>=18",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.birthdate=le1999-03-09&patient.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search patient.gender",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?patient.gender=male&patient.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject._id",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject._id=ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.identifier",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.identifier&domain",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=https://ihe.net/Pharmacy/Patient|ihepat0111&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.name",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.name=Philips&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.family&subject.given",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.family=Philips&subject.given=Phil&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.birthdate",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.birthdate=1973-04-15&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.age>=18",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.birthdate=le1999-03-09&subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search subject.gender",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.gender=male&subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search status",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?status=active&patient.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search timing.event day",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order&timing-event=eq2017-08-13",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search timing.event from",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order&timing-event=ge2017-08-13T10:00:00",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search timing.event to",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order&timing-event=le2017-08-13T23:59:59",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Routeplanning Search timing.event period",
+					"request": {
+						"url": "{{baseurl}}/MedicationRequest?subject.identifier=https://ihe.net/Pharmacy/Patient|&intent=instance-order&timing-event=ge2017-08-12T00:00:00&timing-event=le2017-08-12T12:00:00",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "20.Administration",
+			"description": "",
+			"item": [
+				{
+					"name": "Retrieve MedicationAdministration ihemedadmin0171-i1",
+					"request": {
+						"url": "{{baseurl}}/MedicationAdministration/ihemedadmin0171-i1",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

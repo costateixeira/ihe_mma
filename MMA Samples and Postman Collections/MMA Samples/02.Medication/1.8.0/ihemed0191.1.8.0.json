@@ -1,0 +1,78 @@
+{
+	"resourceType" : "Medication",
+	"id" : "ihemed0191",
+	"meta" : {"tag" : [{"code" : "ihe"}]},
+	"contained" : [{
+			"resourceType" : "Organization",
+			"id" : "iheorg8",
+			"name" : "Sandoz"
+		}
+	],
+	"code" : {
+		"coding" : [{
+				"code" : "3400939207414",
+				"display" : "AMOXICILLINE SANDOZ 500 mg"
+			}
+		]
+	},
+	"isBrand" : true,
+	"manufacturer" : {
+		"reference" : "#iheorg8"
+	},
+	"product" : {
+	"form" : {
+		"coding" : [{
+				"system" : "http://snomed.info/sct",
+				"code" : "385057009",
+				"display" : "Film-coated tablet (qualifier value)"
+			}
+		]
+	},
+	"ingredient" : [{
+			"itemCodeableConcept" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "372687004",
+						"display" : "Amoxicillin (substance)"
+					}
+				]
+			},
+			"amount" : {
+				"numerator" : {
+					"value" : 1000,
+					"system" : "http://unitsofmeasure.org",
+					"code" : "mg"
+				},
+				"denominator" : {
+					"value" : 1,
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+					"code" : "10220000"
+				}
+			}
+		}
+	]},
+	"package" : {
+		"container" : {
+			"coding" : [{
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC",
+					"code" : "30009000",
+					"display" : "Box"
+				}
+			]
+		},
+		"content" : [{
+				"itemCodeableConcept" : {
+					"coding" : [{
+							"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+							"code" : "10220000",
+							"display" : "Coated Tablet"
+						}
+					]
+				},
+				"amount" : {
+					"value" : 6
+				}
+			}
+		]
+	}
+}
