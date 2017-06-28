@@ -1,0 +1,28 @@
+{
+	"resourceType" : "Patient",
+	"id" : "ihepat0333",
+	"meta" : {"tag" : [{"code" : "ihe"}]},
+	"identifier" : [{
+			"type" : {
+				"coding" : [{
+						"system" : "http://hl7.org/fhir/v2/0203",
+						"code" : "SS"
+					}
+				]
+			},
+			"system" : "https://ihe.net/Pharmacy/Patient",
+			"value" : "ihepat0333"
+		}
+	],
+	"active" : true,
+	"name" : [{
+			"use" : "official",
+			"family" : "Salut",
+			"given" : [
+				"Sandra"
+			]
+		}
+	],
+	"gender" : "female",
+	"birthDate" : "1933-03-03"
+}

@@ -1,0 +1,78 @@
+{
+	"resourceType" : "Medication",
+	"id" : "ihemed0181",
+	"meta" : {"tag" : [{"code" : "ihe"}]},
+	"contained" : [{
+			"resourceType" : "Organization",
+			"id" : "iheorg7",
+			"name" : "SANOFI-AVENTIS FRANCE"
+		}
+	],
+	"code" : {
+		"coding" : [{
+				"code" : "3400933302061",
+				"display" : "PROFENID"
+			}
+		]
+	},
+	"isBrand" : true,
+	"manufacturer" : {
+		"reference" : "#iheorg7"
+	},
+	"form" : {
+		"coding" : [{
+				"system" : "http://snomed.info/sct",
+				"code" : "385057009",
+				"display" : "Film-coated tablet (qualifier value)"
+			}
+		]
+	},
+	"ingredient" : [{
+			"itemCodeableConcept" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "386832008",
+						"display" : "Ketoprofen (substance)"
+					}
+				]
+			},
+			"amount" : {
+				"numerator" : {
+					"value" : 100,
+					"system" : "http://unitsofmeasure.org",
+					"code" : "mg"
+				},
+				"denominator" : {
+					"value" : 1,
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+					"code" : "10220000",
+					"display" : "Coated Tablet"
+				}
+			}
+		}
+	],
+	"package" : {
+		"container" : {
+			"coding" : [{
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC",
+					"code" : "30009000",
+					"display" : "Box"
+				}
+			]
+		},
+		"content" : [{
+				"itemCodeableConcept" : {
+					"coding" : [{
+							"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+							"code" : "10220000",
+							"display" : "Coated Tablet"
+						}
+					]
+				},
+				"amount" : {
+					"value" : 30
+				}
+			}
+		]
+	}
+}

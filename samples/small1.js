@@ -1,0 +1,1 @@
+{"resourceType":"Patient","id":"ihepat0111","meta":{"tag":[{"code":"ihe"}]},"identifier":[{"type":{"coding":[{"system":"http://hl7.org/fhir/v2/0203","code":"SS"}]},"system":"https://ihe.net/Pharmacy/Patient","value":"ihepat0111"}],"active":true,"name":[{"use":"official","family":"Philips","given":["Phil"]}],"gender":"male","birthDate":"1973-04-15"}

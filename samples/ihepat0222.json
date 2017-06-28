@@ -1,0 +1,29 @@
+{
+	"resourceType" : "Patient",
+	"id" : "ihepat0222",
+	"meta" : {"tag" : [{"code" : "ihe"}]},
+	"identifier" : [{
+			"type" : {
+				"coding" : [{
+						"system" : "http://hl7.org/fhir/v2/0203",
+						"code" : "SS"
+					}
+				]
+			},
+			"system" : "https://ihe.net/Pharmacy/Patient",
+			"value" : "ihepat0222"
+		}
+	],
+	"active" : true,
+	"name" : [{
+			"use" : "official",
+			"family" : "Medici",
+			"given" : [
+				"Marco"
+			]
+		}
+	],
+	"gender" : "male",
+	"birthDate" : "1953-05-05"
+}
+

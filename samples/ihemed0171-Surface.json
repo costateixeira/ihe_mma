@@ -1,0 +1,78 @@
+{
+	"resourceType" : "Medication",
+	"id" : "ihemed0171",
+	"contained" : [{
+			"resourceType" : "Organization",
+			"id" : "iheorg6",
+			"name" : "Teva Santé"
+		}
+	],
+	"code" : {
+		"coding" : [{
+				"code" : "3400930986080",
+				"display" : "Spasfon"
+			}
+		]
+	},
+	"isBrand" : true,
+	"manufacturer" : {
+		"reference" : "#iheorg6"
+	},
+	"form" : {
+		"coding" : [{
+				"system" : "http://snomed.info/sct",
+				"code" : "385057009",
+				"display" : "Film-coated tablet (qualifier value)"
+			}
+		]
+	},
+	"ingredient" : [{
+			"itemCodeableConcept" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "19341000122103",
+						"display" : "Phloroglucinol (substance)"
+					}
+				]
+			},
+			"amount" : {
+				"numerator" : {
+					"value" : 80,
+					"system" : "http://unitsofmeasure.org",
+					"code" : "mg"
+				},
+				"denominator" : {
+					"value" : 1,
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+					"code" : "10220000",
+					"display" : "Coated Tablet"
+				}
+			}
+		}
+	],
+	"package" : {
+		"container" : {
+			"coding" : [{
+					"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/PAC/PAC",
+					"code" : "30009000",
+					"display" : "Box"
+				}
+			]
+		},
+		"content" : [{
+				"itemCodeableConcept" : {
+					"coding" : [{
+							"system" : "https://standardterms.edqm.eu/browse/get_concepts_by/ISI/PDF",
+							"code" : "10220000",
+							"display" : "Coated Tablet"
+						}
+					]
+				},
+				"amount" : {
+					"value" : 30
+
+				}
+			}
+		]
+	}
+}

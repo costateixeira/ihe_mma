@@ -1,0 +1,52 @@
+{
+	"resourceType" : "MedicationRequest",
+	"id" : "iherx001",
+	"identifier" : [{
+			"value" : "IHE_Ph_MR_2017.001"
+		}
+	],
+	"definition" : [{
+			"reference" : "ActivityDefinition/example"
+		}
+	],
+	"groupIdentifier" : {
+		"value" : "99"
+	},
+	"status" : "active",
+	"intent" : "order",
+	"medicationReference" : {
+		"reference" : "Medication/ihemed0171"
+	},
+	"subject" : {
+		"reference" : "Patient/ihe_121",
+		"display" : "Phil Philips"
+	},
+	"authoredOn" : "2017-02-08",
+	"dosageInstruction" : [{
+			"sequence" : 1,
+			"text" : "single dose",
+			"timing" : {
+				"repeat" : {
+					"frequency" : 3,
+					"period" : 1,
+					"periodUnit" : "d"
+					"duration": "7"
+				}
+			},
+			"route" : {
+				"coding" : [{
+						"system" : "http://snomed.info/sct",
+						"code" : "255559005",
+						"display" : "Oral"
+					}
+				]
+			},
+			"doseQuantity" : {
+				"value" : 500,
+				"unit" : "mg",
+				"system" : "http://unitsofmeasure.org",
+				"code" : "mg"
+			}
+		}
+	]
+}
