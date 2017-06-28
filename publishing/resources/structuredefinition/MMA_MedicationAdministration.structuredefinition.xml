@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <meta>
+    <lastUpdated value="2017-06-16T15:19:10.037+02:00" />
+  </meta>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-wg">
+    <valueCode value="phx" />
+  </extension>
+  <url value="http://ihe-mma/StructureDefinition/MedicationAdministration" />
+  <name value="MMA_MedicationAdministration" />
+  <status value="draft" />
+  <date value="2017-06-16T14:38:06.467188+02:00" />
+  <fhirVersion value="3.0.0" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="MedicationAdministration" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/MedicationAdministration" />
+  <derivation value="constraint" />
+  <differential>
+    <element>
+      <path value="MedicationAdministration.supportingInformation" />
+      <max value="1" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.performer" />
+      <min value="1" />
+    </element>
+    <element id="MedicationAdministration.dosage.dose">
+      <path value="MedicationAdministration.dosage.dose" />
+      <sliceName value="SimpleQuantity" />
+      <min value="1" />
+    </element>
+    <element>
+      <path value="MedicationAdministration.dosage.dose.value" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>
